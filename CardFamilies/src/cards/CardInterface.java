@@ -1,4 +1,4 @@
-package CardFamilies.src;
+package CardFamilies.src.cards;
 import java.awt.Image;
 
 public interface CardInterface {

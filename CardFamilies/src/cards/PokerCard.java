@@ -1,10 +1,10 @@
-package CardFamilies.src;
+package CardFamilies.src.cards;
 import java.awt.Image;
 
 public class PokerCard extends Card {
 
-	public PokerCard(String newSuit, int newRank) {
-		super(newSuit, newRank);
+	public PokerCard(int newRank,String newSuit) {
+		super(newRank,newSuit);
 	}
 
 	@Override

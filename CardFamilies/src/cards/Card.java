@@ -1,4 +1,4 @@
-package CardFamilies.src;
+package CardFamilies.src.cards;
 
 import java.awt.Image;
 
@@ -13,7 +13,7 @@ public abstract class Card implements CardInterface {
 	protected boolean isWild;
 	
 	
-	public Card(String newSuit, int newRank)
+	public Card(int newRank,String newSuit)
 	{
 		this.rank = newRank;
 		this.suit = newSuit;

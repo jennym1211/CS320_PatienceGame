@@ -1,10 +1,11 @@
-package CardFamilies.src;
+package CardFamilies.src.cards;
 import java.awt.Image;
 
-public class UnoCard extends Card {
+public class Joker extends Card {
 
-	public UnoCard(String newSuit, int newRank) {
-		super(newSuit, newRank);
+	public Joker(int newRank,String newSuit) {
+		super(newRank, newSuit);
+		setWild(true);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -26,5 +27,6 @@ public class UnoCard extends Card {
 		return null;
 	}
 
+	
 
 }

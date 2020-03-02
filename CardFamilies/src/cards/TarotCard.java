@@ -1,11 +1,10 @@
-package CardFamilies.src;
+package CardFamilies.src.cards;
 import java.awt.Image;
 
-public class Joker extends Card {
+public class TarotCard extends Card{
 
-	public Joker(String newSuit, int newRank) {
-		super(newSuit, newRank);
-		setWild(true);
+	public TarotCard(int newRank,String newSuit) {
+		super(newRank,newSuit);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -26,7 +25,5 @@ public class Joker extends Card {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
 
 }
