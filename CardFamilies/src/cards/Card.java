@@ -24,20 +24,8 @@ public abstract class Card implements CardInterface {
 	public int getRank() {return rank;}
 	public boolean isVisible() {return visiblity;}
 	protected  void setWild(boolean isWild) {isWild = false;}
-	public  String toString()
-	{
-		if (rank == 11)
-			name = "Jack";
-		else if (rank == 12)
-			name = "Queen";
-		else if (rank == 13)
-			name = "King";
-		else if (rank == 14)
-			name = "Ace";
-		else
-			name = String.valueOf(rank);
-		return " ||" + name + " of " + suit;
-	}
+	public abstract String toString();
+	
 	public boolean isWild() {return isWild;}
 	public abstract Image getBackImage();
 	public abstract Image getFrontImage();

@@ -1,6 +1,4 @@
-
-package CardFamilies.src;
-import java.awt.Image;
+package CardFamilies.src.decks;
 import CardFamilies.src.*;
 
 public class DeckFactory {
@@ -9,14 +7,12 @@ public class DeckFactory {
     if(deckType == null){
        return null;
     }		
-    if(deckType.equalsIgnoreCase("AuthorsDeck")){
-       return new AuthorsDeck();
+ // if(deckType.equalsIgnoreCase("AuthorsDeck")){
+   //    return new AuthorDeck();}
        
-    } else if(deckType.equalsIgnoreCase("PokerDeck")){
+     else if(deckType.equalsIgnoreCase("PokerDeck")){
        return new PokerDeck();
        
-    } else if(deckType.equalsIgnoreCase("TarotDeck")){
-       return new TarotDeck();
     }
     else if(deckType.equalsIgnoreCase("UnoDeck")){
         return new UnoDeck();
