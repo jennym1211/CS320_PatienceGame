@@ -1,7 +1,7 @@
-package CardFamilies.src.decks;
+package decks;
 import java.util.ArrayList;
 
-import CardFamilies.src.cards.*;
+import cards.*;
 
 public class PokerDeck extends Deck {
 
@@ -95,6 +95,7 @@ public class PokerDeck extends Deck {
 				deck.add(new PokerCard(12, "Diamonds"));
 				deck.add(new PokerCard(13, "Diamonds"));
 				deck.add(new PokerCard(14, "Diamonds"));
+				
 			}
 		}
 		return deck;

@@ -1,7 +1,7 @@
-package CardFamilies.src.decks;
+package decks;
 import java.util.ArrayList;
 
-import CardFamilies.src.cards.*;
+import cards.*;
 
 public class AuthorDeck extends Deck {
 

@@ -1,11 +1,11 @@
-package CardFamilies.src.decks;
+package decks;
 import java.util.ArrayList;
 
-import CardFamilies.src.cards.*;
+import cards.*;
 
 public class UnoDeck extends Deck {
 
-    private ArrayList<Card> deck;
+    private ArrayList<Card> unoDeck;
     
     /*
 	 * Values of cards
@@ -23,7 +23,7 @@ public class UnoDeck extends Deck {
 
 	{
 
-		deck = new ArrayList<Card>();
+		unoDeck = new ArrayList<Card>();
 
 	}
 
@@ -34,130 +34,130 @@ public class UnoDeck extends Deck {
 		{
 			for (int value = 1; value <= numStandardValue.length; value++)
 			{
-                deck.add(new UnoCard(0, "Red"));
-                deck.add(new UnoCard(1, "Red"));
-                deck.add(new UnoCard(1, "Red"));
-                deck.add(new UnoCard(2, "Red"));
-                deck.add(new UnoCard(2, "Red"));
-                deck.add(new UnoCard(3, "Red"));
-                deck.add(new UnoCard(3, "Red"));
-                deck.add(new UnoCard(4, "Red"));
-                deck.add(new UnoCard(4, "Red"));
-                deck.add(new UnoCard(5, "Red"));
-                deck.add(new UnoCard(5, "Red"));
-                deck.add(new UnoCard(6, "Red"));
-                deck.add(new UnoCard(6, "Red"));
-                deck.add(new UnoCard(7, "Red"));
-                deck.add(new UnoCard(7, "Red"));
-                deck.add(new UnoCard(8, "Red"));
-                deck.add(new UnoCard(8, "Red"));
-                deck.add(new UnoCard(9, "Red"));
-                deck.add(new UnoCard(9, "Red"));
-                deck.add(new UnoCard(10, "Red"));
-                deck.add(new UnoCard(10, "Red"));
-                deck.add(new UnoCard(11, "Red"));
-                deck.add(new UnoCard(11, "Red"));
-                deck.add(new UnoCard(12, "Red"));
-                deck.add(new UnoCard(12, "Red"));
+                unoDeck.add(new UnoCard(0, "Red"));
+                unoDeck.add(new UnoCard(1, "Red"));
+                unoDeck.add(new UnoCard(1, "Red"));
+                unoDeck.add(new UnoCard(2, "Red"));
+                unoDeck.add(new UnoCard(2, "Red"));
+                unoDeck.add(new UnoCard(3, "Red"));
+                unoDeck.add(new UnoCard(3, "Red"));
+                unoDeck.add(new UnoCard(4, "Red"));
+                unoDeck.add(new UnoCard(4, "Red"));
+                unoDeck.add(new UnoCard(5, "Red"));
+                unoDeck.add(new UnoCard(5, "Red"));
+                unoDeck.add(new UnoCard(6, "Red"));
+                unoDeck.add(new UnoCard(6, "Red"));
+                unoDeck.add(new UnoCard(7, "Red"));
+                unoDeck.add(new UnoCard(7, "Red"));
+                unoDeck.add(new UnoCard(8, "Red"));
+                unoDeck.add(new UnoCard(8, "Red"));
+                unoDeck.add(new UnoCard(9, "Red"));
+                unoDeck.add(new UnoCard(9, "Red"));
+                unoDeck.add(new UnoCard(10, "Red"));
+                unoDeck.add(new UnoCard(10, "Red"));
+                unoDeck.add(new UnoCard(11, "Red"));
+                unoDeck.add(new UnoCard(11, "Red"));
+                unoDeck.add(new UnoCard(12, "Red"));
+                unoDeck.add(new UnoCard(12, "Red"));
          
 
-                deck.add(new UnoCard(0, "Green"));
-                deck.add(new UnoCard(1, "Green"));
-                deck.add(new UnoCard(1, "Green"));
-                deck.add(new UnoCard(2, "Green"));
-                deck.add(new UnoCard(2, "Green"));
-                deck.add(new UnoCard(3, "Green"));
-                deck.add(new UnoCard(3, "Green"));
-                deck.add(new UnoCard(4, "Green"));
-                deck.add(new UnoCard(4, "Green"));
-                deck.add(new UnoCard(5, "Green"));
-                deck.add(new UnoCard(5, "Green"));
-                deck.add(new UnoCard(6, "Green"));
-                deck.add(new UnoCard(6, "Green"));
-                deck.add(new UnoCard(7, "Green"));
-                deck.add(new UnoCard(7, "Green"));
-                deck.add(new UnoCard(8, "Green"));
-                deck.add(new UnoCard(8, "Green"));
-                deck.add(new UnoCard(9, "Green"));
-                deck.add(new UnoCard(9, "Green"));
-                deck.add(new UnoCard(10, "Green"));
-                deck.add(new UnoCard(10, "Green"));
-                deck.add(new UnoCard(11, "Green"));
-                deck.add(new UnoCard(11, "Green"));
-                deck.add(new UnoCard(12, "Green"));
-                deck.add(new UnoCard(12, "Green"));
-                deck.add(new UnoCard(13, "Green"));
-                deck.add(new UnoCard(13, "Green"));
-                deck.add(new UnoCard(13, "Green"));
-                deck.add(new UnoCard(13, "Green"));
+                unoDeck.add(new UnoCard(0, "Green"));
+                unoDeck.add(new UnoCard(1, "Green"));
+                unoDeck.add(new UnoCard(1, "Green"));
+                unoDeck.add(new UnoCard(2, "Green"));
+                unoDeck.add(new UnoCard(2, "Green"));
+                unoDeck.add(new UnoCard(3, "Green"));
+                unoDeck.add(new UnoCard(3, "Green"));
+                unoDeck.add(new UnoCard(4, "Green"));
+                unoDeck.add(new UnoCard(4, "Green"));
+                unoDeck.add(new UnoCard(5, "Green"));
+                unoDeck.add(new UnoCard(5, "Green"));
+                unoDeck.add(new UnoCard(6, "Green"));
+                unoDeck.add(new UnoCard(6, "Green"));
+                unoDeck.add(new UnoCard(7, "Green"));
+                unoDeck.add(new UnoCard(7, "Green"));
+                unoDeck.add(new UnoCard(8, "Green"));
+                unoDeck.add(new UnoCard(8, "Green"));
+                unoDeck.add(new UnoCard(9, "Green"));
+                unoDeck.add(new UnoCard(9, "Green"));
+                unoDeck.add(new UnoCard(10, "Green"));
+                unoDeck.add(new UnoCard(10, "Green"));
+                unoDeck.add(new UnoCard(11, "Green"));
+                unoDeck.add(new UnoCard(11, "Green"));
+                unoDeck.add(new UnoCard(12, "Green"));
+                unoDeck.add(new UnoCard(12, "Green"));
+                unoDeck.add(new UnoCard(13, "Green"));
+                unoDeck.add(new UnoCard(13, "Green"));
+                unoDeck.add(new UnoCard(13, "Green"));
+                unoDeck.add(new UnoCard(13, "Green"));
                 
 
-                deck.add(new UnoCard(0, "Yellow"));
-                deck.add(new UnoCard(1, "Yellow"));
-                deck.add(new UnoCard(1, "Yellow"));
-                deck.add(new UnoCard(2, "Yellow"));
-                deck.add(new UnoCard(2, "Yellow"));
-                deck.add(new UnoCard(3, "Yellow"));
-                deck.add(new UnoCard(3, "Yellow"));
-                deck.add(new UnoCard(4, "Yellow"));
-                deck.add(new UnoCard(4, "Yellow"));
-                deck.add(new UnoCard(5, "Yellow"));
-                deck.add(new UnoCard(5, "Yellow"));
-                deck.add(new UnoCard(6, "Yellow"));
-                deck.add(new UnoCard(6, "Yellow"));
-                deck.add(new UnoCard(7, "Yellow"));
-                deck.add(new UnoCard(7, "Yellow"));
-                deck.add(new UnoCard(8, "Yellow"));
-                deck.add(new UnoCard(8, "Yellow"));
-                deck.add(new UnoCard(9, "Yellow"));
-                deck.add(new UnoCard(9, "Yellow"));
-                deck.add(new UnoCard(10, "Yellow"));
-                deck.add(new UnoCard(10, "Yellow"));
-                deck.add(new UnoCard(11, "Yellow"));
-                deck.add(new UnoCard(11, "Yellow"));
-                deck.add(new UnoCard(12, "Yellow"));
-                deck.add(new UnoCard(12, "Yellow"));
+                unoDeck.add(new UnoCard(0, "Yellow"));
+                unoDeck.add(new UnoCard(1, "Yellow"));
+                unoDeck.add(new UnoCard(1, "Yellow"));
+                unoDeck.add(new UnoCard(2, "Yellow"));
+                unoDeck.add(new UnoCard(2, "Yellow"));
+                unoDeck.add(new UnoCard(3, "Yellow"));
+                unoDeck.add(new UnoCard(3, "Yellow"));
+                unoDeck.add(new UnoCard(4, "Yellow"));
+                unoDeck.add(new UnoCard(4, "Yellow"));
+                unoDeck.add(new UnoCard(5, "Yellow"));
+                unoDeck.add(new UnoCard(5, "Yellow"));
+                unoDeck.add(new UnoCard(6, "Yellow"));
+                unoDeck.add(new UnoCard(6, "Yellow"));
+                unoDeck.add(new UnoCard(7, "Yellow"));
+                unoDeck.add(new UnoCard(7, "Yellow"));
+                unoDeck.add(new UnoCard(8, "Yellow"));
+                unoDeck.add(new UnoCard(8, "Yellow"));
+                unoDeck.add(new UnoCard(9, "Yellow"));
+                unoDeck.add(new UnoCard(9, "Yellow"));
+                unoDeck.add(new UnoCard(10, "Yellow"));
+                unoDeck.add(new UnoCard(10, "Yellow"));
+                unoDeck.add(new UnoCard(11, "Yellow"));
+                unoDeck.add(new UnoCard(11, "Yellow"));
+                unoDeck.add(new UnoCard(12, "Yellow"));
+                unoDeck.add(new UnoCard(12, "Yellow"));
                 
 
-                deck.add(new UnoCard(0, "Blue"));
-                deck.add(new UnoCard(1, "Blue"));
-                deck.add(new UnoCard(1, "Blue"));
-                deck.add(new UnoCard(2, "Blue"));
-                deck.add(new UnoCard(2, "Blue"));
-                deck.add(new UnoCard(3, "Blue"));
-                deck.add(new UnoCard(3, "Blue"));
-                deck.add(new UnoCard(4, "Blue"));
-                deck.add(new UnoCard(4, "Blue"));
-                deck.add(new UnoCard(5, "Blue"));
-                deck.add(new UnoCard(5, "Blue"));
-                deck.add(new UnoCard(6, "Blue"));
-                deck.add(new UnoCard(6, "Blue"));
-                deck.add(new UnoCard(7, "Blue"));
-                deck.add(new UnoCard(7, "Blue"));
-                deck.add(new UnoCard(8, "Blue"));
-                deck.add(new UnoCard(8, "Blue"));
-                deck.add(new UnoCard(9, "Blue"));
-                deck.add(new UnoCard(9, "Blue"));
-                deck.add(new UnoCard(10, "Blue"));
-                deck.add(new UnoCard(10, "Blue"));
-                deck.add(new UnoCard(11, "Blue"));
-                deck.add(new UnoCard(11, "Blue"));
-                deck.add(new UnoCard(12, "Blue"));
-                deck.add(new UnoCard(12, "Blue"));
+                unoDeck.add(new UnoCard(0, "Blue"));
+                unoDeck.add(new UnoCard(1, "Blue"));
+                unoDeck.add(new UnoCard(1, "Blue"));
+                unoDeck.add(new UnoCard(2, "Blue"));
+                unoDeck.add(new UnoCard(2, "Blue"));
+                unoDeck.add(new UnoCard(3, "Blue"));
+                unoDeck.add(new UnoCard(3, "Blue"));
+                unoDeck.add(new UnoCard(4, "Blue"));
+                unoDeck.add(new UnoCard(4, "Blue"));
+                unoDeck.add(new UnoCard(5, "Blue"));
+                unoDeck.add(new UnoCard(5, "Blue"));
+                unoDeck.add(new UnoCard(6, "Blue"));
+                unoDeck.add(new UnoCard(6, "Blue"));
+                unoDeck.add(new UnoCard(7, "Blue"));
+                unoDeck.add(new UnoCard(7, "Blue"));
+                unoDeck.add(new UnoCard(8, "Blue"));
+                unoDeck.add(new UnoCard(8, "Blue"));
+                unoDeck.add(new UnoCard(9, "Blue"));
+                unoDeck.add(new UnoCard(9, "Blue"));
+                unoDeck.add(new UnoCard(10, "Blue"));
+                unoDeck.add(new UnoCard(10, "Blue"));
+                unoDeck.add(new UnoCard(11, "Blue"));
+                unoDeck.add(new UnoCard(11, "Blue"));
+                unoDeck.add(new UnoCard(12, "Blue"));
+                unoDeck.add(new UnoCard(12, "Blue"));
 
-                deck.add(new UnoCard(13, "Black"));
-                deck.add(new UnoCard(13, "Black"));
-                deck.add(new UnoCard(13, "Black"));
-                deck.add(new UnoCard(13, "Black"));
-                deck.add(new UnoCard(14, "Black"));
-                deck.add(new UnoCard(14, "Black"));
-                deck.add(new UnoCard(14, "Black"));
-                deck.add(new UnoCard(14, "Black"));
+                unoDeck.add(new UnoCard(13, "Black"));
+                unoDeck.add(new UnoCard(13, "Black"));
+                unoDeck.add(new UnoCard(13, "Black"));
+                unoDeck.add(new UnoCard(13, "Black"));
+                unoDeck.add(new UnoCard(14, "Black"));
+                unoDeck.add(new UnoCard(14, "Black"));
+                unoDeck.add(new UnoCard(14, "Black"));
+                unoDeck.add(new UnoCard(14, "Black"));
              
               
 			}
 		}
-		return deck;
+		return unoDeck;
     }
 
 
@@ -168,14 +168,14 @@ public class UnoDeck extends Deck {
 		 */
 		StringBuilder sb = new StringBuilder("\n");
 
-		for (int i = 0; i < deck.size(); i++)
+		for (int i = 0; i < unoDeck.size(); i++)
 		{
 
-			sb.append(deck.get(i)).append(" ");
+			sb.append(unoDeck.get(i)).append(" ");
 			if (i % 6 == 0)
 			{
 
-				sb.append(deck.get(i)).append("\n");
+				sb.append(unoDeck.get(i)).append("\n");
 			}
 		}
 

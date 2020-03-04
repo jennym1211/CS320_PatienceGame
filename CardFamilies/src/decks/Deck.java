@@ -1,9 +1,9 @@
-package CardFamilies.src.decks;
+package decks;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-import CardFamilies.src.cards.*;
+import cards.*;
 
 public abstract class Deck {
 private ArrayList<Card> deck;

@@ -1,4 +1,4 @@
-package CardFamilies.src.cards;
+package cards;
 import java.awt.Image;
 
 public class PokerCard extends Card {
