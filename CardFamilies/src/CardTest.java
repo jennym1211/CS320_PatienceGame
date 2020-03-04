@@ -3,11 +3,16 @@ import org.junit.Test;
 import decks.*;
 import cards.*;
 public class CardTest {
-DeckFactory deckFactory = new DeckFactory();
+	
+	
+    DeckFactory deckFactory = new DeckFactory();
 
 	String unoSuit = "Yellow";
     PokerCard p1 = new PokerCard(1 , "Diamonds");
-    UnoCard u1 = new UnoCard(0, unoSuit);
+    UnoCard u1 = new UnoCard(0, unoSuit.toString());
+    
+    
+    
     @Test
     public void TestCardRank() {
     assertEquals(1, p1.getRank());
