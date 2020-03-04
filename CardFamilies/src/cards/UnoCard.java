@@ -31,7 +31,7 @@ public class UnoCard extends Card {
 	}
 	else
 		name = String.valueOf(rank);
-	return " ||" + name + " of " + suit;
+	return  name + " of " + suit;
 }
 	
 	@Override
