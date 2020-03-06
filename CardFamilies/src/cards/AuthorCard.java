@@ -14,6 +14,7 @@ public class AuthorCard extends Card {
 		super(newRank, newSuit);
 		
 		
+		
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -23,13 +24,6 @@ public class AuthorCard extends Card {
 		author = newAuthor;
 		title = newTitle;
 		
-		
-		// TODO Auto-generated constructor stub
-	}
-	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	
 	protected ArrayList<String> getWorks()

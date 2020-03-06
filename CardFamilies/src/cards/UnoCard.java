@@ -3,37 +3,38 @@ package cards;
 
 public class UnoCard extends Card {
 
-	private String name;
-	private int rank;
-	private String suit;
-
-
 	
+	private int rank;
 
 	public UnoCard(int newRank,String newSuit) {
-		super(newRank,newSuit);
-		// TODO Auto-generated constructor stub
+		super(newRank,newSuit);	// TODO Auto-generated constructor stub
+		
 	}
+	
+	
 
 	@Override
-	public String getName() {
-		if (rank == 10)
-		name = "Skip";
-	else if (rank == 11)
-		name = "Reverse";
-	else if (rank == 12)
-		name = "Draw 2";
-	else if (rank == 13)
-		name = "Wild";
-	else if (rank==14)
-	{
-		name ="Wild Draw 4";
-	}
-	else
-		name = String.valueOf(rank);
-	return  name + " of " + suit;
+	public String toString() {
+		 String rankName;
+			if (rank == 10)
+			rankName = "Skip";
+		else if (rank == 11)
+			rankName = "Reverse";
+		else if (rank == 12)
+			rankName = "Draw 2";
+		else if (rank == 13)
+			rankName = "Wild";
+		else if (rank==14)
+		{
+			rankName ="Wild Draw 4";
+		}
+		else
+			rankName = String.valueOf(rank);
+			
+			return rankName + " of " + suit;
+
 }
 
-
+	
 
 }

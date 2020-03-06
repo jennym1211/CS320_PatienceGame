@@ -2,10 +2,11 @@ package cards;
 
 public abstract class Card implements CardInterface {
 	
-	private boolean visiblity;
-	private String suit;
-	private int rank;
-	private int value;
+	protected boolean visiblity;
+	protected String suit;
+	protected int rank;
+	protected int value;
+
 
 	public Card(int newRank,String newSuit)
 	{
@@ -16,9 +17,11 @@ public abstract class Card implements CardInterface {
 	public String getSuit() {return suit;}
 	public int getRank() {return rank;}
 	public boolean isVisible() {return visiblity;}
-	public abstract String getName();
+
+	
 	public int getValue() {return value;}
 	protected void setValue(int newValue) { value = newValue;}
+	protected void setSuit(String newSuit) { suit = newSuit;}
 	public boolean equals(Card c)
 	{if ( suit == c.getSuit() &&
    	      rank == c.getRank()    )                 

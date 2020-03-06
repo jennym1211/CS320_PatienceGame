@@ -6,9 +6,13 @@ import java.util.Collections;
 import cards.*;
 
 public abstract class Deck {
-private ArrayList<Card> deck;
+protected ArrayList<Card> deck;
 
-	
+	public Deck()
+	{
+		deck = new ArrayList<Card>();
+		
+	}
 
     public abstract ArrayList<Card> createTabledeck();
 	
@@ -44,27 +48,7 @@ private ArrayList<Card> deck;
 	}
 
 	
-	 public String toString()
-		{
-			/*
-			 * Uses stringbuilder to format the arraylist of the deck more neatly.
-			 */
-			StringBuilder sb = new StringBuilder("\n");
-
-			for (int i = 0; i < deck.size(); i++)
-			{
-
-				sb.append(deck.get(i)).append(" ");
-				if (i % 6 == 0)
-				{
-
-					sb.append(deck.get(i)).append("\n");
-				}
-			}
-
-			return sb.toString();
-
-	    }
+	
 	
 	
 }
