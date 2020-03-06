@@ -1,5 +1,5 @@
 package cards;
-import java.awt.Image;
+
 
 public class UnoCard extends Card {
 
@@ -16,7 +16,7 @@ public class UnoCard extends Card {
 	}
 
 	@Override
-	public String toString() {
+	public String getName() {
 		if (rank == 10)
 		name = "Skip";
 	else if (rank == 11)
@@ -33,18 +33,7 @@ public class UnoCard extends Card {
 		name = String.valueOf(rank);
 	return  name + " of " + suit;
 }
-	
-	@Override
-	public Image getBackImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public Image getFrontImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
 }

@@ -1,5 +1,5 @@
 package cards;
-import java.awt.Image;
+
 
 public class TarotCard extends Card{
 
@@ -9,21 +9,10 @@ public class TarotCard extends Card{
 	}
 
 	@Override
-	public String toString() {
+	public String getName() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public Image getBackImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Image getFrontImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

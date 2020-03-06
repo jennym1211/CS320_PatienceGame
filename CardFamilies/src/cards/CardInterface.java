@@ -7,9 +7,4 @@ public interface CardInterface {
 	public String getSuit();
 	public int getRank();
 	public String toString();
-	public Image getBackImage();
-	public Image getFrontImage();
-	public boolean isWild();
-	public boolean equals(Card c);
-	public int compareTo(Card c);
 }

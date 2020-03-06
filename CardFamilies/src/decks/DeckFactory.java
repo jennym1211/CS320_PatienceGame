@@ -19,8 +19,6 @@ public class DeckFactory {
     else if(deckType.equalsIgnoreCase("UnoDeck")){
        return new UnoDeck();
      }
-
-    
     return null;
  }
  

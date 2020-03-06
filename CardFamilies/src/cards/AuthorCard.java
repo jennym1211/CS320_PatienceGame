@@ -1,6 +1,4 @@
 package cards;
-
-import java.awt.Image;
 import java.util.ArrayList;
 
 public class AuthorCard extends Card {
@@ -29,7 +27,7 @@ public class AuthorCard extends Card {
 		// TODO Auto-generated constructor stub
 	}
 	@Override
-	public String toString() {
+	public String getName() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -49,16 +47,6 @@ public class AuthorCard extends Card {
 		return title;
 	}
 	
-	@Override
-	public Image getBackImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public Image getFrontImage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

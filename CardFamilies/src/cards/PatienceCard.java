@@ -1,13 +1,16 @@
 package cards;
 
-public class PokerCard extends Card {
 
+public class PatienceCard extends Card {
+	
 	private String name;
 	private int rank;
 	private String suit;
 	
-	public PokerCard(int newRank,String newSuit) {
-		super(newRank,newSuit);
+	
+	public PatienceCard(int newRank, String newSuit) {
+		super(newRank, newSuit);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -24,6 +27,5 @@ public class PokerCard extends Card {
 			name = String.valueOf(rank);
 		return " ||" + name + " of " + suit;
 	}
-
 
 }
