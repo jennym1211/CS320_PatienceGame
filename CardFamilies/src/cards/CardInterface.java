@@ -7,4 +7,5 @@ public interface CardInterface {
 	public String getSuit();
 	public int getRank();
 	public String toString();
+	public int getValue();
 }

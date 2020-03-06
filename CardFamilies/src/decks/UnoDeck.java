@@ -25,9 +25,7 @@ public class UnoDeck extends Deck {
     public UnoDeck()
 
 	{
-
 		unoDeck = new ArrayList<Card>();
-
 	}
 
     @Override

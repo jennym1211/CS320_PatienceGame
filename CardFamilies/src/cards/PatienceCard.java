@@ -14,7 +14,7 @@ public class PatienceCard extends Card {
 	}
 
 	@Override
-	public String getName() {
+	public String toString() {
 		if (rank == 11)
 			name = "Jack";
 		else if (rank == 12)

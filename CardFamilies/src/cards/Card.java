@@ -17,11 +17,8 @@ public abstract class Card implements CardInterface {
 	public String getSuit() {return suit;}
 	public int getRank() {return rank;}
 	public boolean isVisible() {return visiblity;}
-
-	
 	public int getValue() {return value;}
 	protected void setValue(int newValue) { value = newValue;}
-	protected void setSuit(String newSuit) { suit = newSuit;}
 	public boolean equals(Card c)
 	{if ( suit == c.getSuit() &&
    	      rank == c.getRank()    )                 
