@@ -2,10 +2,10 @@ package decks;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+import piles.*;
 import cards.*;
 
-public abstract class Deck {
+public abstract class Deck extends RemoveablePile {
 protected ArrayList<Card> deck;
 
 	public Deck()
@@ -14,7 +14,7 @@ protected ArrayList<Card> deck;
 		
 	}
 
-    public abstract ArrayList<Card> createTabledeck();
+    public abstract ArrayList<Card> createDeck();
 	
 	public void add(Card c)
 

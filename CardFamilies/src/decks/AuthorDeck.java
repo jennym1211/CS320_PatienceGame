@@ -23,7 +23,7 @@ public class AuthorDeck extends Deck {
     protected static final String[] authorsInDeck = {"Louisa May Alcott", "James Fenimore Cooper","Charles Dickens", "Nathaniel Hawthorne", "Washington Irving","Henry Wadsworth Longfellow", "Sir Walter Scott","William Shakespeare","Robert Louis Stevenson","Alfred, Lord Tennyson", "Mark Twain"};
 
     @Override
-    public ArrayList<Card> createTabledeck() {
+    public ArrayList<Card> createDeck() {
         
 		for (int suit = 0; suit < suitsIndeck.length; suit++)
 		{

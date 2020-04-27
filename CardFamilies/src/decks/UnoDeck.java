@@ -29,7 +29,7 @@ public class UnoDeck extends Deck {
 	}
 
     @Override
-    public ArrayList<Card> createTabledeck() {
+    public ArrayList<Card> createDeck() {
         
     	//Adding regular Uno Cards
 		for (int suit = 0; suit < suitsIndeck.length; suit++)

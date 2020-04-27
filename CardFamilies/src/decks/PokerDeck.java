@@ -1,5 +1,7 @@
 package decks;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import cards.*;
 
@@ -28,9 +30,32 @@ public class PokerDeck extends Deck {
 
 	}
 
+    public Card deal()
+    {
+    	try
+		{
+			if (deck.isEmpty())
+				throw new IllegalStateException("Deck is empty");
+		} catch (IllegalStateException e)
+		{
+			System.out.println("Deck is empty!");
+		}
+		return deck.remove(deck.size() - 1);
+		// return deck.pop();
+	}
+
+
+    /**
+	 * Arranges the deck's cards in random order.
+	 */
+	public void shuffle()
+		{
+			Collections.shuffle(deck);
+		}
+
 
     @Override
-    public ArrayList<Card> createTabledeck() {
+    public ArrayList<Card> createDeck() {
         
 		for (int suit = 0; suit < suitsIndeck.length; suit++)
 		{
