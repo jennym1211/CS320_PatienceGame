@@ -24,7 +24,7 @@ public class PatienceDeck extends Deck {
 	    
 
 	@Override
-	public ArrayList<Card> createTabledeck() {
+	public ArrayList<Card> createDeck() {
 		for (int suit = 0; suit < suitsIndeck.length; suit++)
 		{
 			for (int value = 1; value <= numStandardValue.length; value++)
