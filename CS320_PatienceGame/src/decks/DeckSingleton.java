@@ -7,17 +7,21 @@ import decks.*;
 
 public class DeckSingleton {
 	
-	
-	private static Deck deck;
+	private static DeckSingleton ds = null;
+	private PokerDeck deck;
 
-	
-	public static Deck GetDeck() {
+	private DeckSingleton()
+	{
+		deck = new PokerDeck();
 		
-			if(deck == null)
+	}
+	public static DeckSingleton GetDeck() {
+		
+			if(ds == null)
 			{
-				deck = new PokerDeck();
+			  ds = new DeckSingleton();
 			}
-			return deck;
+			return ds;
 	}
 
 }

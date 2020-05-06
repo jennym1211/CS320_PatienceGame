@@ -1,12 +1,17 @@
 package cards;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 public class PokerCard extends Card {
 
 	private String name;
 	
 	
-	public PokerCard(int newRank,String newSuit) {
+	
+	public PokerCard(int newRank,Suit newSuit) {
 		super(newRank,newSuit);
+		
+
 	}
 
 	@Override
@@ -23,6 +28,8 @@ public class PokerCard extends Card {
 			name = String.valueOf(rank);
 		return " ||" + name + " of " + suit;
 	}
+	
+	
 
 
 }

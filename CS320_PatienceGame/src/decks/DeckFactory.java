@@ -5,7 +5,7 @@ public class DeckFactory {
 
    
 
- public Deck getDeck(String deckType){
+ public PokerDeck getDeck(String deckType){
     if(deckType == null){
        return null;
     }		
@@ -16,9 +16,7 @@ public class DeckFactory {
        return new PokerDeck();
        
     }
-    else if(deckType.equalsIgnoreCase("UnoDeck")){
-       return new UnoDeck();
-     }
+     
     return null;
  }
  
