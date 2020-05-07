@@ -46,7 +46,7 @@ public class GameView extends JFrame implements ActionListener {
 	private WastePileView wview = new WastePileView();
 	private StockPileView sview = new StockPileView();
 	
-	private ArrayList<TableauColumn> tableaux = new ArrayList<TableauColumn>();
+	//private ArrayList<TableauColumn> tableaux = new ArrayList<TableauColumn>();
 	private ArrayList<Foundation> foundations = new ArrayList<Foundation>();
 	private ArrayList<Card> stockPile = new ArrayList<Card>();
 
@@ -116,7 +116,7 @@ public class GameView extends JFrame implements ActionListener {
 
 	private void createPanels() {
 
-		tableaux = game.table.getTableaux();
+		//tableaux = game.table.getTableaux();
 		foundations = game.table.getFoundations();
 		
 		tview = new ArrayList<TableauxView>();

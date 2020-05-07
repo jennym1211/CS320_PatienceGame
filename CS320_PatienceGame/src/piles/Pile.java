@@ -35,6 +35,7 @@ public abstract class Pile implements IPile, IGamePile, Iterable<Card> {
 	 * Default constructor.
 	 */
 	public Pile() {
+
 		pile = new ArrayList<Card>();
 	}
 

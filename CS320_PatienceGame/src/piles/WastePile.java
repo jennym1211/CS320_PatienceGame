@@ -19,7 +19,8 @@ public class WastePile extends Pile {
 
 	public WastePile() {
 		super();
-		wastePile = new ArrayList<Card>();
+		super.pile = wastePile;
+		//wastePile = new ArrayList<Card>();
 
 	}
 

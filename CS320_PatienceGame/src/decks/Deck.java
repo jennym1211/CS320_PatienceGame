@@ -15,7 +15,7 @@ import cards.*;
  */
 
 public abstract class Deck {
-	protected ArrayList<Card> deck;
+	protected ArrayList<Card> deck = new ArrayList<Card>();
 
 	/**
 	 * Creates a new deck with 52 cards in sorted order.
@@ -37,16 +37,23 @@ public abstract class Deck {
 	}
 
 	/**
-	 * Returns the card at the top of the stack.
+	 * Removes and returns the card at the top of the deck.
 	 * 
-	 * @return - a card object
+	 * @return the topmost card
+	 * @throws IllegalStateException if the deck is empty
 	 */
-	public Card get()
-
-	{
-		return deck.get(0);
-
+	public Card deal() {
+		try {
+			if (deck.size() < 0)
+				throw new IllegalStateException("Deck is empty");
+		} catch (IllegalStateException e) {
+			System.out.println("Deck is empty!");
+		}
+		return deck.remove(0);
+		// return deck.pop();
 	}
+
+	public abstract ArrayList<Card> createDeck();
 
 	/**
 	 * Randomizes the order of cards in the deck object.
@@ -58,6 +65,21 @@ public abstract class Deck {
 	}
 
 	/**
+	 * Returns the deck as an arraylist.
+	 * 
+	 * @return - ArrayList of the card object.
+	 */
+	public ArrayList<Card> asArrayList() {
+
+		ArrayList<Card> temp = new ArrayList<Card>();
+		deck.toArray();
+
+		temp.addAll(deck);
+
+		return temp;
+	}
+
+	/**
 	 * Returns the size of the deck.
 	 * 
 	 * @return - the size of the deck
@@ -65,8 +87,20 @@ public abstract class Deck {
 	public int size()
 
 	{
-
 		return deck.size();
+	}
+
+	/**
+	 * Returns the deck as a string.
+	 * 
+	 * @return - Deck as string
+	 */
+	public String toString() {
+		String result = "";
+		for (Card c : deck)
+			result += c + "\n";
+		return result;
+
 	}
 
 	/**

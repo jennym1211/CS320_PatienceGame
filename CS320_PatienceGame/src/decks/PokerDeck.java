@@ -9,7 +9,7 @@ import piles.StockPile;
 
 public class PokerDeck extends Deck {
 
-	private ArrayList<Card> deck;
+	private ArrayList<Card> deck = new ArrayList<Card>();
 
 	/*
 	 * Values of cards
@@ -23,67 +23,21 @@ public class PokerDeck extends Deck {
 	protected static final Suit[] suitsIndeck = { Suit.HEARTS, Suit.CLUBS, Suit.DIAMONDS, Suit.SPADES }; // total
 	// suits in deck.
 
-	public PokerDeck()
-	{
+	public PokerDeck() {
 		super();
-		deck = new ArrayList<Card>();
+		super.deck = deck;
+		deck = createDeck();
+
+	}
+
+	public ArrayList<Card> createDeck() {
 		for (int suit = 0; suit < suitsIndeck.length; suit++) {
 			for (int value = 0; value < numStandardValue.length; value++) {
-				deck.add(new PokerCard(numStandardValue[value], suitsIndeck[suit]));}}	
-	}
-
-	/**
-	 * Removes and returns the card at the top of the deck.
-	 * 
-	 * @return the topmost card
-	 * @throws IllegalStateException if the deck is empty
-	 */
-	public Card deal() {
-		try {
-			if ( deck.size() < 0)
-				throw new IllegalStateException("Deck is empty");
-		} catch (IllegalStateException e) {
-			System.out.println("Deck is empty!");
+				deck.add(new PokerCard(numStandardValue[value], suitsIndeck[suit]));
+			}
 		}
-		return deck.remove(0);
-		// return deck.pop();
-	}
 
-	/**
-	 * Arranges the deck's cards in random order.
-	 */
-	public void shuffle() {
-		Collections.shuffle(deck);
-	}
-
-
-	/**
-	 *  Returns the deck as a string.
-	 *  
-	 *  @return - Deck as string
-	 */
-	public String toString() {
-		String result = "";
-		for (Card c : deck)
-			result += c + "\n";
-		return result;
-
-
-	}
-	
-	
-	/**
-	 *  Returns the deck as an arraylist.
-	 * @return - ArrayList of the card object.
-	 */
-	public ArrayList<Card> asArrayList() {
-
-		ArrayList<Card> temp = new ArrayList<Card>();
-		deck.toArray();
-		
-		temp.addAll(deck);
-		
-		return temp;
+		return deck;
 	}
 
 }

@@ -16,7 +16,7 @@ public class StockPile extends Pile {
 	
 	public StockPile() {
 		super();
-		stockPile = new ArrayList<Card>();
+		super.pile = pile;
 	}
 
 
@@ -33,7 +33,7 @@ public class StockPile extends Pile {
 		String cards = "";
 		if (!this.isEmpty()) {
 			
-			cards = "|| Back ||";
+			cards = "|| *Back* ||";
 			
 		}
 		else

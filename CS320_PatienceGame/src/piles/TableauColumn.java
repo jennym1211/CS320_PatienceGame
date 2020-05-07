@@ -15,11 +15,12 @@ import cards.Card;
 
 public class TableauColumn extends Pile {
 
-	protected ArrayList<Card> tableaux;
+	protected ArrayList<Card> tableau;
 
 	public TableauColumn() {
 		super();
-		tableaux = new ArrayList<Card>();
+		tableau = new ArrayList<Card>();
+		super.pile = tableau;
 	}
 
 	/*
@@ -59,7 +60,7 @@ public class TableauColumn extends Pile {
 	public boolean canAdd(Pile p) {
 		if (this.addable(p))
 		{
-			for (Card x : tableaux)
+			for (Card x : tableau)
 			{
 				pile.remove(0);
 				this.add(x);
@@ -73,7 +74,7 @@ public class TableauColumn extends Pile {
 
 	public int indexOf(int i) {
 		// TODO Auto-generated method stub
-		return tableaux.indexOf(i);
+		return tableau.indexOf(i);
 	}
 
 }

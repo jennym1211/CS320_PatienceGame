@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import cards.Card;
 
-
 /**
  * 
  * The foundation is the end goal for the cards for the player to be able to win
@@ -22,13 +21,13 @@ public class Foundation extends Pile implements IGamePile {
 	private ArrayList<Card> pile = new ArrayList<Card>();
 	private boolean isEmpty;
 	private Card top;
-	
 
 	public Foundation() {
 		super();
-		
+		super.pile = pile;
 
 	}
+
 	/**
 	 * 
 	 * Overridden method that specifies rule of when the card is allowed to be moved
@@ -60,7 +59,7 @@ public class Foundation extends Pile implements IGamePile {
 		} else if (!this.isEmpty()
 				&& (card.getSuit().getOrder() == top.getSuit().getOrder() && (card.getRank() == top.getRank() + 1))) {
 			System.out.println("Move completed.");
-			return true; 
+			return true;
 		} else {
 			System.out.println("Move not allowed.");
 			return false;
@@ -68,8 +67,6 @@ public class Foundation extends Pile implements IGamePile {
 
 	}
 
-	
-	
 	/**
 	 * Since cards cannot be removed once they're on the foundation, this will
 	 * always return false.
@@ -79,7 +76,5 @@ public class Foundation extends Pile implements IGamePile {
 		System.out.println("Cannot remove card from foundation!");
 		return;
 	}
-
-	
 
 }

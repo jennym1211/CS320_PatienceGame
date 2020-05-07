@@ -13,7 +13,7 @@ import views.TableauxView;
 public class GameController {
 	Scanner scan = new Scanner(System.in);
 	private boolean isWon = false;
-	protected Table table = new Table();
+	protected Table table;
 	
 	/**
 	 * Calls the initalize method.
@@ -27,7 +27,7 @@ public class GameController {
 	 *  The controller is initalized by the table object utilizing the create game method.
 	 */
 	public void initalize() {
-		table.CreateGame();
+		table = new Table();
 
 	}
 
@@ -215,7 +215,7 @@ public class GameController {
 			
 			if( getTable().getWastePile().size() == 1)
 			{
-				 getTable().getStockPile().add( getTable().getStockPile().size(),  getTable().getWastePile().get(0));
+				 getTable().getStockPile().addIndex( getTable().getStockPile().size(),  getTable().getWastePile().get(0));
 				 getTable().getWastePile().remove();
 				 getTable().getWastePile().add( getTable().getStockPile().get(0));
 				

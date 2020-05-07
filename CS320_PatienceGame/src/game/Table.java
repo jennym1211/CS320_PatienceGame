@@ -21,25 +21,30 @@ import piles.WastePile;
  */
 public class Table {
 
+	protected PokerDeck deck = new PokerDeck();
 	protected ArrayList<Foundation> foundations = new ArrayList<Foundation>();
 	protected ArrayList<TableauColumn> tableaux = new ArrayList<TableauColumn>();
-	protected ArrayList<Card> stockPile = new ArrayList<Card>();
-	protected PokerDeck deck = new PokerDeck();
+	protected StockPile stockPile = new StockPile();
+
 	protected WastePile wastePile = new WastePile();
+
+	public Table() {
+		CreateGame();
+	}
 
 	/**
 	 * Utilizes the creation methods to create the table.
 	 */
 	public void CreateGame() {
 
-		// deck = new PokerDeck();
+		
 		deck.shuffle();
 
 		createTableaux();
 		createFoundations();
 		createWastePile();
-		createStockPile(deck);
-		System.out.println("deck size" + deck.size());
+		createStockPile();
+		
 
 	}
 
@@ -73,9 +78,17 @@ public class Table {
 		System.out.println("Creating tableaux...");
 		for (int i = 0; i <= 6; i++) {
 			tableaux.add(new TableauColumn());
-			Card c = deck.deal();
-			c.hide();
-			tableaux.get(i).add(c);
+
+		}
+
+		for (int j = 0; j < 4; j++) {
+			for (int k = 0; k < 7; k++)
+
+			{
+				Card c = deck.deal();
+				c.hide();
+				tableaux.get(k).add(c);
+			}
 		}
 
 		System.out.println("tableaux created.");
@@ -90,8 +103,13 @@ public class Table {
 	 * @param deck
 	 * 
 	 */
-	public void createStockPile(PokerDeck deck) {
-		stockPile = deck.asArrayList();
+	public void createStockPile() {
+
+		while (!deck.isEmpty()) {
+			stockPile.add(deck.deal());
+		}
+
+		System.out.println("Stock pile size:" + stockPile.size());
 
 	}
 
@@ -142,7 +160,7 @@ public class Table {
 	 * 
 	 * @return - the stock pile
 	 */
-	public ArrayList<Card> getStockPile() {
+	public StockPile getStockPile() {
 
 		return stockPile;
 	}
@@ -161,6 +179,7 @@ public class Table {
 	 * Returns the table as a string format.
 	 */
 	public String toString() {
+
 		String result = "Foundations:";
 		for (int i = 0; i < 4; i++) {
 			result += "\t" + getFoundations().toString() + "\t";
@@ -169,13 +188,15 @@ public class Table {
 
 		for (TableauColumn t : tableaux) {
 
-			result += "\t Column " + tableaux.indexOf(t) + ": " + t.toString() + "\n";
+			int indexIncremented = tableaux.indexOf(t) + 1;
+
+			result += "\t Column " + indexIncremented + ": " + t.toString() + "\n";
 
 		}
 
 		result += "\n Stock Pile:";
 
-		result += "\t || *** || \n";
+		result += "\t" + getStockPile().toString() + "\n";
 
 		result += "\n Waste Pile :";
 
