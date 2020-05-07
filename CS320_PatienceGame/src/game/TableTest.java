@@ -85,10 +85,17 @@ class TableTest {
 		assertEquals(4, table.getFoundations().size());
 	}
 	
+	@Test
 	public void AssertWastePileIsZero()
 	{
 		assertEquals(0, table.wastePile.size());
 	}
+	
+	public void AssertStockPileSize()
+	{
+		assertEquals(24, table.stockPile.size());
+	}
+	
 	
 	
 	

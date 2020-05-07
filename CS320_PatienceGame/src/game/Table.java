@@ -21,7 +21,8 @@ import piles.WastePile;
  */
 public class Table {
 
-	protected PokerDeck deck = new PokerDeck();
+	protected DeckFactory df = new DeckFactory();
+	protected Deck deck = df.getDeck("PokerDeck");
 	protected ArrayList<Foundation> foundations = new ArrayList<Foundation>();
 	protected ArrayList<TableauColumn> tableaux = new ArrayList<TableauColumn>();
 	protected StockPile stockPile = new StockPile();
@@ -37,6 +38,7 @@ public class Table {
 	 */
 	public void CreateGame() {
 
+		
 		
 		deck.shuffle();
 
@@ -105,11 +107,12 @@ public class Table {
 	 */
 	public void createStockPile() {
 
-		while (!deck.isEmpty()) {
+		
+		while (stockPile.size() != 24) {
 			stockPile.add(deck.deal());
 		}
-
 		System.out.println("Stock pile size:" + stockPile.size());
+		
 
 	}
 
